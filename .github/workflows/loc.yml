@@ -3,12 +3,103 @@ on:
   schedule:
     - cron: "0 0 * * 0"
   workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v3
-      - name: Generate LOC stats
-        uses: nicknisi/loc-stats-action@v1
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate LOC stats SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: arnavps
+        run: |
+          python3 << 'EOF'
+          import requests, json, os
+
+          username = os.environ["USERNAME"]
+          token = os.environ["GITHUB_TOKEN"]
+          headers = {"Authorization": f"token {token}"}
+
+          # Get all repos
+          repos = []
+          page = 1
+          while True:
+              r = requests.get(f"https://api.github.com/users/{username}/repos?per_page=100&page={page}", headers=headers)
+              data = r.json()
+              if not data: break
+              repos += data
+              page += 1
+
+          # Get language bytes per repo
+          lang_bytes = {}
+          total_files = 0
+          for repo in repos:
+              if repo.get("fork"): continue
+              r = requests.get(repo["languages_url"], headers=headers)
+              for lang, b in r.json().items():
+                  lang_bytes[lang] = lang_bytes.get(lang, 0) + b
+
+          # Approximate LOC (avg 50 bytes/line)
+          total_loc = sum(lang_bytes.values()) // 50
+          top_langs = sorted(lang_bytes.items(), key=lambda x: -x[1])[:6]
+          top_total = sum(b for _, b in top_langs)
+
+          COLORS = {
+              "Python":"#3572A5","JavaScript":"#f1e05a","TypeScript":"#2b7489",
+              "HTML":"#e34c26","CSS":"#563d7c","Sass":"#a53b70",
+              "Java":"#b07219","C":"#555555","C++":"#f34b7d","Go":"#00ADD8",
+              "Shell":"#89e051","Rust":"#dea584","YAML":"#cb171e","Vue":"#41b883",
+          }
+
+          bars = ""
+          y = 155
+          for lang, b in top_langs:
+              pct = b / top_total
+              bar_w = int(pct * 480)
+              color = COLORS.get(lang, "#8b949e")
+              loc_approx = b // 50
+              bars += f'''
+              <text x="30" y="{y}" font-family="'Courier New',monospace" font-size="13" fill="#c9d1d9" font-weight="600">{lang}</text>
+              <rect x="150" y="{y-13}" width="{bar_w}" height="14" rx="2" fill="{color}"/>
+              <rect x="150" y="{y-13}" width="480" height="14" rx="2" fill="#21262d" style="mix-blend-mode:multiply"/>
+              <rect x="150" y="{y-13}" width="{bar_w}" height="14" rx="2" fill="{color}"/>
+              <text x="645" y="{y}" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">{loc_approx:,}</text>
+              <text x="700" y="{y}" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">{pct*100:.1f}%</text>
+              '''
+              y += 28
+
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="740" height="{y+20}" style="border-radius:6px">
+          <rect width="740" height="{y+20}" fill="#0d1117" rx="6"/>
+          <rect x="0" y="0" width="740" height="4" fill="#e05252" rx="2"/>
+          <text x="30" y="55" font-family="'Courier New',monospace" font-size="38" fill="#c9d1d9" font-weight="700">{total_loc:,}</text>
+          <text x="30" y="78" font-family="'Courier New',monospace" font-size="11" fill="#8b949e" letter-spacing="2">LINES OF CODE</text>
+          <text x="30" y="118" font-family="'Courier New',monospace" font-size="12" fill="#e05252" font-weight="700" letter-spacing="2">TOP LANGUAGES</text>
+          {bars}
+          <text x="710" y="{y+15}" font-family="'Courier New',monospace" font-size="10" fill="#388bfd" text-anchor="end">Updated automatically via GitHub Actions</text>
+          </svg>'''
+
+          with open("loc-stats.svg", "w") as f:
+              f.write(svg)
+          print("Done!")
+          EOF
+
+      - name: Commit SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add loc-stats.svg
+          git commit -m "Update LOC stats" || echo "No changes"
+          git push
