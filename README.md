@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=28&duration=3000&pause=800&color=00FF41&center=true&vCenter=true&width=700&lines=Hey+there%2C+I'm+Arnav+%F0%9F%91%8B;CSE+%7C+IoT+%26+Cyber+Security+%F0%9F%94%90;Building+AI+%2B+Security+at+the+Edge+%F0%9F%8C%90;CTF+Player+%7C+Hackathon+Winner+%F0%9F%8F%86)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=32&duration=3000&pause=99999&color=00FF41&center=true&vCenter=true&width=600&lines=Hey+there%2C+I%27m+Arnav+%F0%9F%91%8B)](https://git.io/typing-svg)
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=arnavps&theme=matrix&row=1&column=7&margin-h=15&margin-w=5&no-bg=true)](https://github.com/arnavps/github-profile-trophy)
 
@@ -8,14 +8,11 @@
 
 ---
 
-<img align="right" alt="Hacking GIF" width="360" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
-
-
-<br clear="right"/>
+<div align="center">
+  <img src="arnav-ninja.svg" alt="Arnav Ninja" width="420"/>
+</div>
 
 ---
-
-<div align="center">
 
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
@@ -26,8 +23,6 @@
 [![My Skills](https://skillicons.dev/icons?i=mongodb,postgres,mysql,redis,docker,git,github,vercel,firebase,linux,kali)](https://skillicons.dev)
 
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
-
-</div>
 
 ---
 
@@ -66,8 +61,6 @@
 
 ---
 
-
-
 ---
 
 <div align="center">
@@ -85,15 +78,6 @@
 ---
 
 <div align="center">
-
-```
-  ██████╗ ██╗   ██╗██╗██╗     ██████╗     ██╗  ██╗ █████╗  ██████╗██╗  ██╗
-  ██╔══██╗██║   ██║██║██║     ██╔══██╗    ██║  ██║██╔══██╗██╔════╝██║ ██╔╝
-  ██████╔╝██║   ██║██║██║     ██║  ██║    ███████║███████║██║     █████╔╝
-  ██╔══██╗██║   ██║██║██║     ██║  ██║    ██╔══██║██╔══██║██║     ██╔═██╗
-  ██████╔╝╚██████╔╝██║███████╗██████╔╝    ██║  ██║██║  ██║╚██████╗██║  ██╗
-  ╚═════╝  ╚═════╝ ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
-```
 
 *"Curious, Adaptable, and Driven — I thrive where I can experiment, innovate, and build."*
 
