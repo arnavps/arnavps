@@ -1,311 +1,240 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" width="420" height="320" shape-rendering="crispEdges">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400" shape-rendering="crispEdges">
   <defs>
     <style>
-      .float    { animation: float 3.5s ease-in-out infinite; }
-      .blink    { animation: blink 0.9s step-end infinite; }
-      .glow-g   { animation: glowG 2s ease-in-out infinite alternate; }
-      .glow-c   { animation: glowC 2s ease-in-out infinite alternate; }
-      .slash    { animation: slash 2.8s ease-in-out infinite; }
-      .sparks   { animation: sparks 2.8s ease-in-out infinite; }
-      .rain1    { animation: rain 1.6s linear infinite; }
-      .rain2    { animation: rain 2.2s linear infinite 0.5s; }
-      .rain3    { animation: rain 1.9s linear infinite 1.0s; }
-      .rain4    { animation: rain 2.5s linear infinite 0.3s; }
-      .scan     { animation: scanline 4s linear infinite; }
-      .pulse    { animation: pulse 1.5s ease-in-out infinite; }
+      .float  { animation: float 3.5s ease-in-out infinite; }
+      .slash  { animation: slash 2.6s ease-in-out infinite; }
+      .spark  { animation: spark 2.6s ease-in-out infinite; }
+      .glow   { animation: glow  2s   ease-in-out infinite alternate; }
+      .blink  { animation: blink 0.9s step-end infinite; }
+      .rain1  { animation: rain  1.7s linear infinite; }
+      .rain2  { animation: rain  2.3s linear infinite 0.6s; }
+      .rain3  { animation: rain  1.9s linear infinite 1.1s; }
+      .rain4  { animation: rain  2.5s linear infinite 0.3s; }
+      .scan   { animation: scan  5s   linear infinite; }
+      .shadow { animation: shadow 3.5s ease-in-out infinite; }
 
       @keyframes float {
         0%,100% { transform: translateY(0); }
-        50%     { transform: translateY(-8px); }
+        50%     { transform: translateY(-10px); }
+      }
+      @keyframes slash {
+        0%,100% { opacity:0; transform: rotate(-35deg) scaleX(0.2); }
+        35%,65% { opacity:1; transform: rotate(-20deg) scaleX(1); }
+      }
+      @keyframes spark {
+        0%,100% { opacity:0; transform:scale(0); }
+        40%,60% { opacity:1; transform:scale(1); }
+      }
+      @keyframes glow {
+        from { filter: drop-shadow(0 0 3px #00eeff) drop-shadow(0 0 8px #00eeff); }
+        to   { filter: drop-shadow(0 0 10px #00eeff) drop-shadow(0 0 20px #00eeff); }
       }
       @keyframes blink {
         0%,100% { opacity:1; } 50% { opacity:0; }
       }
-      @keyframes glowG {
-        from { filter: drop-shadow(0 0 4px #00ff41) drop-shadow(0 0 10px #00ff41); }
-        to   { filter: drop-shadow(0 0 12px #00ff41) drop-shadow(0 0 24px #00ff41); }
-      }
-      @keyframes glowC {
-        from { filter: drop-shadow(0 0 4px #00eeff) drop-shadow(0 0 10px #00eeff); }
-        to   { filter: drop-shadow(0 0 12px #00eeff) drop-shadow(0 0 24px #00eeff); }
-      }
-      @keyframes slash {
-        0%,100% { transform: rotate(-30deg) translateX(0); opacity:0; }
-        30%,70% { transform: rotate(-20deg) translateX(8px); opacity:1; }
-        50%     { transform: rotate(-10deg) translateX(16px); opacity:1; }
-      }
-      @keyframes sparks {
-        0%,100% { opacity:0; transform: scale(0.5); }
-        40%,60% { opacity:1; transform: scale(1); }
-      }
       @keyframes rain {
-        0%   { transform: translateY(-30px); opacity:0.9; }
-        90%  { opacity:0.6; }
-        100% { transform: translateY(330px); opacity:0; }
+        0%   { transform:translateY(-40px); opacity:0.8; }
+        90%  { opacity:0.5; }
+        100% { transform:translateY(410px); opacity:0; }
       }
-      @keyframes scanline {
-        0%   { transform: translateY(-10px); }
-        100% { transform: translateY(330px); }
+      @keyframes scan {
+        0%   { transform:translateY(-4px); opacity:0.05; }
+        100% { transform:translateY(404px); opacity:0.05; }
       }
-      @keyframes pulse {
-        0%,100% { opacity:0.4; } 50% { opacity:1; }
+      @keyframes shadow {
+        0%,100% { transform: scaleX(1);   opacity:0.15; }
+        50%     { transform: scaleX(0.6); opacity:0.07; }
       }
     </style>
   </defs>
 
-  <!-- ══ BACKGROUND ══ -->
-  <rect width="420" height="320" fill="#060a0f"/>
+  <!-- BG -->
+  <rect width="300" height="400" fill="#05080d"/>
 
-  <!-- subtle dot grid -->
-  <rect width="420" height="320" fill="none" stroke="#0a1a0a" stroke-width="0"/>
-
-  <!-- Matrix rain left -->
-  <g class="rain1" font-family="monospace" font-size="11" fill="#00ff41" opacity="0.45">
-    <text x="12" y="0">1</text><text x="12" y="14">0</text><text x="12" y="28">ア</text>
-    <text x="12" y="42">1</text><text x="12" y="56">ナ</text><text x="12" y="70">0</text>
+  <!-- matrix rain -->
+  <g class="rain1" font-family="monospace" font-size="12" fill="#00ff41" opacity="0.4">
+    <text x="8"  y="0">1</text><text x="8"  y="15">忍</text>
+    <text x="8"  y="30">0</text><text x="8"  y="45">者</text>
+    <text x="8"  y="60">1</text><text x="8"  y="75">ア</text>
   </g>
-  <g class="rain2" font-family="monospace" font-size="11" fill="#00ff41" opacity="0.3">
-    <text x="32" y="0">忍</text><text x="32" y="14">0</text><text x="32" y="28">1</text>
-    <text x="32" y="42">者</text><text x="32" y="56">1</text><text x="32" y="70">0</text>
+  <g class="rain2" font-family="monospace" font-size="12" fill="#00ff41" opacity="0.3">
+    <text x="24" y="0">0</text><text x="24" y="15">1</text>
+    <text x="24" y="30">ナ</text><text x="24" y="45">0</text>
+    <text x="24" y="60">1</text>
   </g>
-  <!-- Matrix rain right -->
-  <g class="rain3" font-family="monospace" font-size="11" fill="#00eeff" opacity="0.3">
-    <text x="390" y="0">ジ</text><text x="390" y="14">1</text><text x="390" y="28">0</text>
-    <text x="390" y="42">ャ</text><text x="390" y="56">1</text>
+  <g class="rain3" font-family="monospace" font-size="12" fill="#00eeff" opacity="0.25">
+    <text x="270" y="0">ジ</text><text x="270" y="15">0</text>
+    <text x="270" y="30">1</text><text x="270" y="45">ャ</text>
+    <text x="270" y="60">0</text>
   </g>
-  <g class="rain4" font-family="monospace" font-size="11" fill="#00ff41" opacity="0.35">
-    <text x="370" y="0">0</text><text x="370" y="14">1</text><text x="370" y="28">A</text>
-    <text x="370" y="42">R</text><text x="370" y="56">N</text>
+  <g class="rain4" font-family="monospace" font-size="12" fill="#00ff41" opacity="0.3">
+    <text x="284" y="0">1</text><text x="284" y="15">0</text>
+    <text x="284" y="30">忍</text><text x="284" y="45">1</text>
+    <text x="284" y="60">0</text>
   </g>
 
-  <!-- scanline sweep -->
-  <rect width="420" height="8" fill="#00ff41" opacity="0.03" class="scan"/>
+  <!-- scanline -->
+  <rect width="300" height="6" fill="#00ff41" class="scan"/>
 
-  <!-- ══ GROUND SHADOW ══ -->
-  <ellipse cx="170" cy="288" rx="80" ry="10" fill="#00ff41" opacity="0.08"/>
+  <!-- ground shadow -->
+  <ellipse cx="150" cy="378" rx="65" ry="9" fill="#00ff41" class="shadow"/>
 
-  <!-- ══ NINJA CHARACTER (floating) ══ -->
-  <g class="float" transform="translate(60, 30)">
+  <!-- ══ NINJA (floating) ══ -->
+  <g class="float" transform="translate(60, 20)">
 
-    <!-- ── SCARF / MASK flowing behind ── -->
-    <rect x="44" y="36" width="6"  height="30" fill="#cc0000"/>
-    <rect x="50" y="40" width="6"  height="26" fill="#aa0000"/>
-    <rect x="56" y="44" width="8"  height="18" fill="#880000"/>
-    <rect x="64" y="48" width="8"  height="12" fill="#660000"/>
-    <!-- scarf tail 2 -->
-    <rect x="42" y="60" width="6"  height="20" fill="#aa0000"/>
-    <rect x="36" y="66" width="6"  height="12" fill="#880000"/>
+    <!-- scarf trails behind head -->
+    <rect x="100" y="50"  width="8"  height="28" fill="#cc0000"/>
+    <rect x="108" y="56"  width="7"  height="20" fill="#aa0000"/>
+    <rect x="115" y="62"  width="8"  height="14" fill="#880000"/>
+    <rect x="123" y="68"  width="7"  height="8"  fill="#660000"/>
+    <rect x="98"  y="72"  width="6"  height="20" fill="#aa0000"/>
+    <rect x="92"  y="78"  width="6"  height="12" fill="#880000"/>
 
     <!-- ── HEAD ── -->
-    <!-- Hood / head wrap dark -->
-    <rect x="18" y="10" width="48" height="44" fill="#111122"/>
-    <!-- head shape sides -->
-    <rect x="14" y="14" width="6"  height="32" fill="#111122"/>
-    <rect x="64" y="14" width="6"  height="32" fill="#111122"/>
-    <!-- face gap (eyes only visible) -->
-    <rect x="18" y="32" width="48" height="14" fill="#1a0a0a"/>
+    <!-- main hood block -->
+    <rect x="30"  y="20"  width="60" height="52" fill="#0f0f1e"/>
+    <rect x="26"  y="26"  width="8"  height="38" fill="#0f0f1e"/>
+    <rect x="86"  y="26"  width="8"  height="38" fill="#0f0f1e"/>
+    <!-- head top rounding -->
+    <rect x="34"  y="16"  width="52" height="8"  fill="#0f0f1e"/>
+    <rect x="38"  y="12"  width="44" height="8"  fill="#0f0f1e"/>
 
-    <!-- EYES — glowing cyan -->
-    <rect x="22" y="34" width="14" height="8" fill="#001a22"/>
-    <rect x="48" y="34" width="14" height="8" fill="#001a22"/>
-    <!-- iris -->
-    <rect x="24" y="35" width="10" height="6" fill="#00eeff"/>
-    <rect x="50" y="35" width="10" height="6" fill="#00eeff"/>
-    <!-- pupil -->
-    <rect x="27" y="36" width="4"  height="4" fill="#003344"/>
-    <rect x="53" y="36" width="4"  height="4" fill="#003344"/>
-    <!-- shine dots -->
-    <rect x="27" y="35" width="2"  height="2" fill="#ffffff"/>
-    <rect x="53" y="35" width="2"  height="2" fill="#ffffff"/>
-
-    <!-- Forehead protector band -->
-    <rect x="14" y="10" width="56" height="10" fill="#1a1a33"/>
+    <!-- forehead protector band -->
+    <rect x="26"  y="20"  width="68" height="12" fill="#1a1a33"/>
     <!-- metal plate -->
-    <rect x="22" y="10" width="40" height="9"  fill="#2a2a44"/>
-    <!-- engraving line -->
-    <rect x="26" y="13" width="32" height="2"  fill="#4444aa" opacity="0.8"/>
-    <!-- kanji-ish symbol on plate — pixel art -->
-    <rect x="38" y="11" width="2"  height="6"  fill="#6666ff"/>
-    <rect x="34" y="13" width="10" height="2"  fill="#6666ff"/>
+    <rect x="34"  y="20"  width="52" height="11" fill="#22224a"/>
+    <!-- plate engraving -->
+    <rect x="38"  y="23"  width="44" height="2"  fill="#4444aa" opacity="0.9"/>
+    <!-- kanji symbol (pixel) -->
+    <rect x="56"  y="21"  width="3"  height="8"  fill="#7777ff"/>
+    <rect x="50"  y="24"  width="15" height="3"  fill="#7777ff"/>
+    <rect x="50"  y="21"  width="5"  height="3"  fill="#7777ff"/>
+    <rect x="60"  y="21"  width="5"  height="3"  fill="#7777ff"/>
 
-    <!-- nose bridge area -->
-    <rect x="38" y="42" width="8"  height="4"  fill="#0f0810"/>
+    <!-- face slot — dark -->
+    <rect x="28"  y="44"  width="64" height="16" fill="#120808"/>
 
-    <!-- ── MASK lower face ── -->
-    <rect x="18" y="46" width="48" height="14" fill="#111122"/>
-    <!-- mask seam line -->
-    <rect x="18" y="46" width="48" height="2"  fill="#00eeff" opacity="0.3"/>
+    <!-- EYES -->
+    <rect x="32"  y="46"  width="20" height="10" fill="#001820"/>
+    <rect x="68"  y="46"  width="20" height="10" fill="#001820"/>
+    <!-- iris cyan glow -->
+    <rect x="34"  y="47"  width="16" height="8"  fill="#00ccee" class="glow"/>
+    <rect x="70"  y="47"  width="16" height="8"  fill="#00ccee" class="glow"/>
+    <!-- pupil -->
+    <rect x="38"  y="49"  width="6"  height="5"  fill="#002233"/>
+    <rect x="74"  y="49"  width="6"  height="5"  fill="#002233"/>
+    <!-- shine -->
+    <rect x="38"  y="48"  width="3"  height="2"  fill="#ffffff"/>
+    <rect x="74"  y="48"  width="3"  height="2"  fill="#ffffff"/>
 
-    <!-- ── NECK ── -->
-    <rect x="32" y="56" width="20" height="8"  fill="#111122"/>
+    <!-- lower mask -->
+    <rect x="28"  y="60"  width="64" height="18" fill="#0f0f1e"/>
+    <!-- mask seam -->
+    <rect x="28"  y="60"  width="64" height="2"  fill="#00eeff" opacity="0.25"/>
+    <!-- mask nose ridge -->
+    <rect x="56"  y="64"  width="8"  height="6"  fill="#0a0a18"/>
 
-    <!-- ── BODY / KIMONO ── -->
-    <rect x="10" y="64" width="64" height="64" fill="#0d0d1a"/>
-    <!-- kimono lapel left -->
-    <rect x="10" y="64" width="16" height="54" fill="#131326"/>
-    <!-- kimono lapel right -->
-    <rect x="58" y="64" width="16" height="54" fill="#131326"/>
-    <!-- chest panel -->
-    <rect x="24" y="64" width="36" height="56" fill="#0a0a16"/>
-    <!-- belt / sash -->
-    <rect x="10" y="106" width="64" height="8"  fill="#cc0000"/>
-    <rect x="10" y="108" width="64" height="4"  fill="#880000"/>
-    <!-- sash knot -->
-    <rect x="36" y="104" width="12" height="14" fill="#dd1111"/>
-    <rect x="38" y="102" width="8"  height="4"  fill="#dd1111"/>
+    <!-- neck -->
+    <rect x="46"  y="78"  width="28" height="10" fill="#0f0f1e"/>
 
-    <!-- kunai holder on chest -->
-    <rect x="28" y="72" width="4"  height="14" fill="#333355"/>
-    <rect x="34" y="72" width="4"  height="12" fill="#333355"/>
-    <rect x="40" y="72" width="4"  height="14" fill="#333355"/>
-    <!-- kunai tips -->
-    <rect x="29" y="70" width="2"  height="4"  fill="#8888cc"/>
-    <rect x="35" y="70" width="2"  height="4"  fill="#8888cc"/>
-    <rect x="41" y="70" width="2"  height="4"  fill="#8888cc"/>
+    <!-- ── BODY ── -->
+    <rect x="16"  y="88"  width="88" height="76" fill="#0c0c18"/>
+    <!-- kimono lapels -->
+    <rect x="16"  y="88"  width="22" height="66" fill="#111124"/>
+    <rect x="82"  y="88"  width="22" height="66" fill="#111124"/>
+    <!-- chest center -->
+    <rect x="36"  y="88"  width="48" height="68" fill="#090912"/>
 
-    <!-- ── LEFT ARM (raised, sword hand) ── -->
-    <rect x="-6"  y="64" width="18" height="14" fill="#0d0d1a"/>
-    <rect x="-10" y="72" width="12" height="36" fill="#0d0d1a"/>
+    <!-- RED BELT / SASH -->
+    <rect x="16"  y="140" width="88" height="12" fill="#bb0000"/>
+    <rect x="16"  y="144" width="88" height="5"  fill="#880000"/>
+    <!-- sash knot center -->
+    <rect x="50"  y="137" width="20" height="18" fill="#dd1111"/>
+    <rect x="53"  y="134" width="14" height="6"  fill="#dd1111"/>
+
+    <!-- kunai holders -->
+    <rect x="40"  y="96"  width="5"  height="18" fill="#2a2a44"/>
+    <rect x="48"  y="96"  width="5"  height="16" fill="#2a2a44"/>
+    <rect x="56"  y="96"  width="5"  height="18" fill="#2a2a44"/>
+    <!-- kunai blades tips -->
+    <rect x="41"  y="93"  width="3"  height="5"  fill="#9999cc"/>
+    <rect x="49"  y="93"  width="3"  height="5"  fill="#9999cc"/>
+    <rect x="57"  y="93"  width="3"  height="5"  fill="#9999cc"/>
+
+    <!-- ── LEFT ARM raised (sword) ── -->
+    <rect x="0"   y="88"  width="18" height="16" fill="#0c0c18"/>
+    <rect x="-4"  y="98"  width="14" height="42" fill="#0c0c18"/>
     <!-- glove -->
-    <rect x="-12" y="104" width="14" height="10" fill="#111122"/>
-    <!-- fingers -->
-    <rect x="-12" y="112" width="4"  height="6"  fill="#111122"/>
-    <rect x="-6"  y="112" width="4"  height="8"  fill="#111122"/>
-    <rect x="0"   y="112" width="4"  height="6"  fill="#111122"/>
+    <rect x="-6"  y="136" width="16" height="12" fill="#0f0f1e"/>
+    <rect x="-6"  y="146" width="5"  height="7"  fill="#0f0f1e"/>
+    <rect x="0"   y="146" width="5"  height="9"  fill="#0f0f1e"/>
+    <rect x="6"   y="146" width="5"  height="7"  fill="#0f0f1e"/>
 
-    <!-- ── RIGHT ARM (down / guard) ── -->
-    <rect x="72" y="64" width="18" height="14" fill="#0d0d1a"/>
-    <rect x="78" y="72" width="12" height="36" fill="#0d0d1a"/>
-    <!-- glove -->
-    <rect x="78" y="104" width="14" height="10" fill="#111122"/>
-    <rect x="78" y="112" width="4"  height="6"  fill="#111122"/>
-    <rect x="84" y="112" width="4"  height="8"  fill="#111122"/>
-    <rect x="90" y="112" width="4"  height="6"  fill="#111122"/>
+    <!-- ── RIGHT ARM guarding ── -->
+    <rect x="102" y="88"  width="18" height="16" fill="#0c0c18"/>
+    <rect x="106" y="98"  width="14" height="42" fill="#0c0c18"/>
+    <rect x="106" y="136" width="16" height="12" fill="#0f0f1e"/>
+    <rect x="106" y="146" width="5"  height="7"  fill="#0f0f1e"/>
+    <rect x="112" y="146" width="5"  height="9"  fill="#0f0f1e"/>
+    <rect x="118" y="146" width="5"  height="7"  fill="#0f0f1e"/>
 
     <!-- ── LEGS ── -->
-    <rect x="18" y="128" width="24" height="42" fill="#0a0a14"/>
-    <rect x="42" y="128" width="24" height="42" fill="#0a0a14"/>
+    <rect x="24"  y="164" width="30" height="52" fill="#090912"/>
+    <rect x="66"  y="164" width="30" height="52" fill="#090912"/>
     <!-- leg wraps -->
-    <rect x="18" y="138" width="24" height="4"  fill="#cc0000" opacity="0.7"/>
-    <rect x="18" y="150" width="24" height="4"  fill="#cc0000" opacity="0.7"/>
-    <rect x="42" y="138" width="24" height="4"  fill="#cc0000" opacity="0.7"/>
-    <rect x="42" y="150" width="24" height="4"  fill="#cc0000" opacity="0.7"/>
+    <rect x="24"  y="176" width="30" height="5"  fill="#cc0000" opacity="0.75"/>
+    <rect x="24"  y="192" width="30" height="5"  fill="#cc0000" opacity="0.75"/>
+    <rect x="66"  y="176" width="30" height="5"  fill="#cc0000" opacity="0.75"/>
+    <rect x="66"  y="192" width="30" height="5"  fill="#cc0000" opacity="0.75"/>
     <!-- tabi boots -->
-    <rect x="14" y="168" width="28" height="10" fill="#0d0d1a"/>
-    <rect x="42" y="168" width="28" height="10" fill="#0d0d1a"/>
-    <rect x="12" y="174" width="8"  height="4"  fill="#1a1a2e"/>
-    <rect x="64" y="174" width="8"  height="4"  fill="#1a1a2e"/>
+    <rect x="20"  y="214" width="36" height="12" fill="#0f0f1e"/>
+    <rect x="64"  y="214" width="36" height="12" fill="#0f0f1e"/>
+    <rect x="18"  y="220" width="10" height="6"  fill="#1a1a2e"/>
+    <rect x="88"  y="220" width="10" height="6"  fill="#1a1a2e"/>
 
     <!-- ── KATANA ── -->
-    <!-- handle (tsuka) -->
-    <rect x="-30" y="80" width="28" height="8"  fill="#4a2000"/>
-    <rect x="-30" y="82" width="28" height="4"  fill="#6a3000"/>
-    <!-- tsuba (guard) - circle-ish -->
-    <rect x="-4"  y="76" width="8"  height="16" fill="#888800"/>
-    <rect x="-2"  y="74" width="4"  height="20" fill="#aaaa00"/>
-    <!-- blade -->
-    <rect x="-56" y="81" width="54" height="4"  fill="#ccccdd"/>
-    <rect x="-56" y="82" width="54" height="2"  fill="#eeeeff"/>
+    <!-- tsuka handle -->
+    <rect x="-44" y="112" width="36" height="10" fill="#3a1800"/>
+    <rect x="-44" y="114" width="36" height="5"  fill="#5a2800"/>
+    <!-- tsuba guard -->
+    <rect x="-10" y="108" width="10" height="20" fill="#888800"/>
+    <rect x="-8"  y="106" width="6"  height="24" fill="#aaaa22"/>
+    <!-- blade long -->
+    <rect x="-82" y="114" width="72" height="5"  fill="#c8c8de"/>
+    <rect x="-82" y="114" width="72" height="2"  fill="#eeeeff"/>
     <!-- blade tip -->
-    <rect x="-62" y="82" width="8"  height="6"  fill="#ccccdd" transform="skewY(-20)"/>
-    <!-- blade edge glow -->
-    <rect x="-56" y="81" width="54" height="1"  fill="#ffffff" opacity="0.6"/>
+    <rect x="-90" y="114" width="10" height="8"  fill="#c8c8de" transform="skewY(-25)"/>
+    <!-- edge highlight -->
+    <rect x="-82" y="114" width="72" height="1"  fill="#ffffff" opacity="0.7"/>
 
   </g>
   <!-- end float -->
 
-  <!-- ── SWORD SLASH EFFECT ── -->
-  <g class="slash" transform-origin="80 130">
-    <rect x="55"  y="95"  width="120" height="4"  fill="#00eeff" opacity="0.9" transform="rotate(-25 55 95)"/>
-    <rect x="55"  y="100" width="110" height="2"  fill="#ffffff" opacity="0.7" transform="rotate(-25 55 100)"/>
-    <rect x="55"  y="105" width="90"  height="2"  fill="#00eeff" opacity="0.4" transform="rotate(-25 55 105)"/>
+  <!-- ── KATANA SLASH ARC ── -->
+  <g class="slash" transform-origin="100 148" style="transform-box: fill-box;">
+    <rect x="40"  y="130" width="140" height="5"  fill="#00eeff" opacity="0.9" transform="rotate(-22 40 130)"/>
+    <rect x="40"  y="136" width="120" height="3"  fill="#ffffff" opacity="0.6" transform="rotate(-22 40 136)"/>
+    <rect x="40"  y="141" width="90"  height="2"  fill="#00eeff" opacity="0.35" transform="rotate(-22 40 141)"/>
   </g>
 
-  <!-- spark particles -->
-  <g class="sparks">
-    <rect x="155" y="88" width="4" height="4" fill="#ffffff"/>
-    <rect x="162" y="82" width="3" height="3" fill="#00eeff"/>
-    <rect x="148" y="94" width="3" height="3" fill="#ffff00"/>
-    <rect x="166" y="90" width="2" height="2" fill="#ffffff"/>
-    <rect x="158" y="78" width="2" height="2" fill="#00eeff"/>
+  <!-- spark burst -->
+  <g class="spark">
+    <rect x="174" y="118" width="6" height="6" fill="#ffffff"/>
+    <rect x="182" y="110" width="4" height="4" fill="#00eeff"/>
+    <rect x="166" y="124" width="4" height="4" fill="#ffff44"/>
+    <rect x="186" y="120" width="3" height="3" fill="#ffffff"/>
+    <rect x="178" y="106" width="3" height="3" fill="#00eeff"/>
+    <rect x="170" y="112" width="3" height="3" fill="#ffff44"/>
   </g>
 
-  <!-- ── INFO PANEL right side ── -->
-  <!-- panel bg -->
-  <rect x="230" y="30" width="175" height="250" rx="4" fill="#060f0a" stroke="#00ff41" stroke-width="1.5" opacity="0.95"/>
-  <!-- panel header -->
-  <rect x="230" y="30" width="175" height="22" rx="4" fill="#003300"/>
-  <rect x="230" y="44" width="175" height="8"  fill="#003300"/>
-  <text x="244" y="46" font-family="monospace" font-size="9" fill="#00ff41">// ninja.profile</text>
-  <!-- header dots -->
-  <rect x="236" y="36" width="6" height="6" rx="1" fill="#ff5f57"/>
-  <rect x="246" y="36" width="6" height="6" rx="1" fill="#febc2e"/>
-  <rect x="256" y="36" width="6" height="6" rx="1" fill="#28c840"/>
-
-  <!-- stat rows -->
-  <g font-family="monospace" font-size="9">
-    <text x="242" y="74"  fill="#555566">NAME    :</text><text x="302" y="74"  fill="#00eeff">Arnav S.</text>
-    <text x="242" y="90"  fill="#555566">ROLE    :</text><text x="302" y="90"  fill="#00ff41">Hacker/Builder</text>
-    <text x="242" y="106" fill="#555566">COLLEGE :</text><text x="302" y="106" fill="#00eeff">LTCE Mumbai</text>
-    <text x="242" y="122" fill="#555566">GPA     :</text><text x="302" y="122" fill="#ffff44">9.3 / 10 ⭐</text>
-    <text x="242" y="138" fill="#555566">CERT    :</text><text x="302" y="138" fill="#ff8844">CEH (pursuing)</text>
-    <text x="242" y="154" fill="#555566">CTF     :</text><text x="302" y="154" fill="#00ff41">Chakravyuha 2.0</text>
-    <text x="242" y="170" fill="#555566">WIN     :</text><text x="302" y="170" fill="#ffdd00">Hack4Innovation 🏆</text>
-    <text x="242" y="186" fill="#555566">LOC     :</text><text x="302" y="186" fill="#00eeff">Mumbai, IN 📍</text>
-  </g>
-
-  <!-- divider -->
-  <rect x="240" y="196" width="155" height="1" fill="#00ff41" opacity="0.3"/>
-
-  <!-- skill tags -->
-  <g font-family="monospace" font-size="8">
-    <rect x="242" y="202" width="42" height="13" rx="2" fill="#001a00" stroke="#00ff41" stroke-width="1"/>
-    <text x="249" y="212" fill="#00ff41">Next.js</text>
-
-    <rect x="290" y="202" width="46" height="13" rx="2" fill="#001a00" stroke="#00ff41" stroke-width="1"/>
-    <text x="297" y="212" fill="#00ff41">FastAPI</text>
-
-    <rect x="342" y="202" width="50" height="13" rx="2" fill="#001a22" stroke="#00eeff" stroke-width="1"/>
-    <text x="349" y="212" fill="#00eeff">LangGraph</text>
-
-    <rect x="242" y="220" width="36" height="13" rx="2" fill="#001a22" stroke="#00eeff" stroke-width="1"/>
-    <text x="249" y="230" fill="#00eeff">Docker</text>
-
-    <rect x="284" y="220" width="46" height="13" rx="2" fill="#1a0000" stroke="#ff4444" stroke-width="1"/>
-    <text x="291" y="230" fill="#ff6666">BurpSuite</text>
-
-    <rect x="336" y="220" width="54" height="13" rx="2" fill="#1a0000" stroke="#ff4444" stroke-width="1"/>
-    <text x="343" y="230" fill="#ff6666">Metasploit</text>
-
-    <rect x="242" y="238" width="38" height="13" rx="2" fill="#1a1a00" stroke="#ffff44" stroke-width="1"/>
-    <text x="249" y="248" fill="#ffff44">Python</text>
-
-    <rect x="286" y="238" width="34" height="13" rx="2" fill="#1a1a00" stroke="#ffff44" stroke-width="1"/>
-    <text x="293" y="248" fill="#ffff44">Nmap</text>
-
-    <rect x="326" y="238" width="66" height="13" rx="2" fill="#001a22" stroke="#00eeff" stroke-width="1"/>
-    <text x="333" y="248" fill="#00eeff">Kali Linux</text>
-  </g>
-
-  <!-- terminal cursor line -->
-  <text x="242" y="272" font-family="monospace" font-size="9" fill="#00ff41">$ <tspan class="blink">█</tspan></text>
-
-  <!-- ── NAME PLATE ── -->
-  <g>
-    <rect x="0" y="288" width="420" height="32" fill="#030a03"/>
-    <rect x="0" y="288" width="420" height="2"  fill="#00ff41" opacity="0.5" class="pulse"/>
-    <text x="210" y="306" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#00ff41" class="glow-g">ARNAV SHIRWADKAR</text>
-    <text x="210" y="316" text-anchor="middle" font-family="monospace" font-size="8"  fill="#00eeff" opacity="0.8">[ CSE • IoT &amp; CyberSec • AI Builder • CTF ]</text>
-  </g>
-
-  <!-- ── CORNER HUD BRACKETS ── -->
-  <rect x="0"   y="0"   width="16" height="2"  fill="#00ff41" opacity="0.6"/>
-  <rect x="0"   y="0"   width="2"  height="16" fill="#00ff41" opacity="0.6"/>
-  <rect x="404" y="0"   width="16" height="2"  fill="#00ff41" opacity="0.6"/>
-  <rect x="418" y="0"   width="2"  height="16" fill="#00ff41" opacity="0.6"/>
-  <rect x="0"   y="318" width="16" height="2"  fill="#00ff41" opacity="0.6"/>
-  <rect x="0"   y="304" width="2"  height="16" fill="#00ff41" opacity="0.6"/>
-  <rect x="404" y="318" width="16" height="2"  fill="#00ff41" opacity="0.6"/>
-  <rect x="418" y="304" width="2"  height="16" fill="#00ff41" opacity="0.6"/>
+  <!-- corner HUD brackets -->
+  <rect x="0"   y="0"   width="20" height="3"  fill="#00ff41" opacity="0.5"/>
+  <rect x="0"   y="0"   width="3"  height="20" fill="#00ff41" opacity="0.5"/>
+  <rect x="280" y="0"   width="20" height="3"  fill="#00ff41" opacity="0.5"/>
+  <rect x="297" y="0"   width="3"  height="20" fill="#00ff41" opacity="0.5"/>
+  <rect x="0"   y="397" width="20" height="3"  fill="#00ff41" opacity="0.5"/>
+  <rect x="0"   y="380" width="3"  height="20" fill="#00ff41" opacity="0.5"/>
+  <rect x="280" y="397" width="20" height="3"  fill="#00ff41" opacity="0.5"/>
+  <rect x="297" y="380" width="3"  height="20" fill="#00ff41" opacity="0.5"/>
 
 </svg>
