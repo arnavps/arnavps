@@ -2,15 +2,11 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=32&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=Hey+there%2C+I%27m+Arnav+%F0%9F%91%8B)](https://git.io/typing-svg)
 
+[![trophy](https://github-profile-trophy.vercel.app/?username=arnavps&theme=matrix&row=1&column=7&margin-h=15&margin-w=5&no-bg=true)](https://github.com/arnavps/github-profile-trophy)
+
 </div>
 
----
-
-<div align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="480" alt="coding"/>
-</div>
-
----
+![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
 <div align="center">
 
@@ -19,7 +15,7 @@
 
 </div>
 
----
+![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
 <div align="center">
 
@@ -27,7 +23,7 @@
 
 </div>
 
----
+![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
 <div align="center">
 
@@ -37,20 +33,8 @@
 
 </div>
 
----
-
-### 🔥 Featured Projects
-
-| Project | Stack | What it does |
-|---|---|---|
-| 🌾 **[MittiMitra](https://github.com/arnavps)** | Next.js · FastAPI · Groq LPU · Polygon | Edge-to-Ledger platform eliminating ₹92K Cr post-harvest loss for Indian farmers |
-| 🚇 **[CrowdSense AI](https://github.com/arnavps)** | Random Forest · LangGraph · FastAPI | Predictive crowd intelligence for Mumbai transit — beat the surge before it happens |
-| ♻️ **[VerdaFlow](https://github.com/arnavps)** | ML · Time-Series · Cloud · Serverless | Smart waste collection that learns spatiotemporal patterns to slash city costs |
-| 💳 **[CredNexis AI](https://github.com/arnavps)** | LightGBM · XGBoost · NetworkX · Socket.io | Real-time credit scoring for 51M unbanked MSMEs — 88% accuracy in milliseconds |
-| 📜 **[ACRIS](https://github.com/arnavps)** | LangChain · ChromaDB · NetworkX · Multi-Agent | 6-agent system monitoring RBI + SEBI 24/7; detects cross-regulation contradictions |
-
----
+![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
 <div align="center">
-  <img src="arnav-ninja.svg" alt="Ninja" width="300"/>
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="480" alt="coding"/>
 </div>
