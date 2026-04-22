@@ -6,13 +6,6 @@
 
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=arnavps&theme=onedark&no-bg=true&no-frame=true&rank=-SECRET&margin-w=10&margin-h=15&column=7)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
-![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
 <div align="center">
 
@@ -51,11 +44,6 @@
 
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
-<div align="center">
-
-[![LOC Stats](https://github.com/arnavps/arnavps/raw/main/loc-stats.svg)](https://github.com/arnavps/arnavps)
-
-</div>
 
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
