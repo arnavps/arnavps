@@ -9,8 +9,7 @@
 
 <div align="center">
 
-| ![Arnav's GitHub Stats](https://github-readme-stats.vercel.app/api?username=arnavps&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00ff41&icon_color=00ff41) | ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=arnavps&theme=highcontrast&hide_border=true&background=0d1117&ring=00ff41&fire=00ff41&currStreakLabel=00ff41) |
-|---|---|
+![Arnav's GitHub Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=arnavps&theme=github_dark)&nbsp;&nbsp;![GitHub Streak](https://github-readme-streak-stats-eight.vercel.app/?user=arnavps&theme=highcontrast&hide_border=true&background=0d1117&ring=00ff41&fire=00ff41&currStreakLabel=00ff41)
 
 </div>
 
@@ -18,11 +17,9 @@
 
 <div align="center">
 
-<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="30px"> **Skills**
+<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="30px"> &nbsp;**Skills**
 
-</div>
-
-<div align="center">
+<br/>
 
 [![My Skills](https://skillicons.dev/icons?i=nextjs,react,ts,js,html,css,tailwind,py,fastapi,nodejs,java,c,cpp)](https://skillicons.dev)
 
@@ -43,6 +40,8 @@
 ![theHarvester](https://img.shields.io/badge/theHarvester-222222?style=for-the-badge&logo=linux&logoColor=white)
 
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
+
+
 
 
 <div align="center">
