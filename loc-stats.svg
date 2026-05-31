@@ -1,49 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="740" height="343" style="border-radius:6px">
 <rect width="740" height="343" fill="#0d1117" rx="6"/>
 <rect x="0" y="0" width="740" height="4" fill="#e05252" rx="2"/>
-<text x="30" y="55" font-family="'Courier New',monospace" font-size="38" fill="#c9d1d9" font-weight="700">155,778</text>
+<text x="30" y="55" font-family="'Courier New',monospace" font-size="38" fill="#c9d1d9" font-weight="700">174,015</text>
 <text x="30" y="78" font-family="'Courier New',monospace" font-size="11" fill="#8b949e" letter-spacing="2">LINES OF CODE</text>
 <text x="30" y="118" font-family="'Courier New',monospace" font-size="12" fill="#e05252" font-weight="700" letter-spacing="2">TOP LANGUAGES</text>
 
     <text x="30" y="155" font-family="'Courier New',monospace" font-size="13" fill="#c9d1d9" font-weight="600">TypeScript</text>
-    <rect x="150" y="142" width="254" height="14" rx="2" fill="#2b7489"/>
+    <rect x="150" y="142" width="249" height="14" rx="2" fill="#2b7489"/>
     <rect x="150" y="142" width="480" height="14" rx="2" fill="#21262d" style="mix-blend-mode:multiply"/>
-    <rect x="150" y="142" width="254" height="14" rx="2" fill="#2b7489"/>
-    <text x="645" y="155" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">82,396</text>
-    <text x="700" y="155" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">53.0%</text>
+    <rect x="150" y="142" width="249" height="14" rx="2" fill="#2b7489"/>
+    <text x="645" y="155" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">90,265</text>
+    <text x="700" y="155" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">52.0%</text>
     
-    <text x="30" y="183" font-family="'Courier New',monospace" font-size="13" fill="#c9d1d9" font-weight="600">JavaScript</text>
-    <rect x="150" y="170" width="86" height="14" rx="2" fill="#f1e05a"/>
+    <text x="30" y="183" font-family="'Courier New',monospace" font-size="13" fill="#c9d1d9" font-weight="600">Python</text>
+    <rect x="150" y="170" width="89" height="14" rx="2" fill="#3572A5"/>
     <rect x="150" y="170" width="480" height="14" rx="2" fill="#21262d" style="mix-blend-mode:multiply"/>
-    <rect x="150" y="170" width="86" height="14" rx="2" fill="#f1e05a"/>
-    <text x="645" y="183" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">27,984</text>
-    <text x="700" y="183" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">18.0%</text>
+    <rect x="150" y="170" width="89" height="14" rx="2" fill="#3572A5"/>
+    <text x="645" y="183" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">32,316</text>
+    <text x="700" y="183" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">18.6%</text>
     
-    <text x="30" y="211" font-family="'Courier New',monospace" font-size="13" fill="#c9d1d9" font-weight="600">Python</text>
-    <rect x="150" y="198" width="72" height="14" rx="2" fill="#3572A5"/>
+    <text x="30" y="211" font-family="'Courier New',monospace" font-size="13" fill="#c9d1d9" font-weight="600">JavaScript</text>
+    <rect x="150" y="198" width="77" height="14" rx="2" fill="#f1e05a"/>
     <rect x="150" y="198" width="480" height="14" rx="2" fill="#21262d" style="mix-blend-mode:multiply"/>
-    <rect x="150" y="198" width="72" height="14" rx="2" fill="#3572A5"/>
-    <text x="645" y="211" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">23,611</text>
-    <text x="700" y="211" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">15.2%</text>
+    <rect x="150" y="198" width="77" height="14" rx="2" fill="#f1e05a"/>
+    <text x="645" y="211" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">28,041</text>
+    <text x="700" y="211" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">16.2%</text>
     
     <text x="30" y="239" font-family="'Courier New',monospace" font-size="13" fill="#c9d1d9" font-weight="600">HTML</text>
-    <rect x="150" y="226" width="49" height="14" rx="2" fill="#e34c26"/>
+    <rect x="150" y="226" width="44" height="14" rx="2" fill="#e34c26"/>
     <rect x="150" y="226" width="480" height="14" rx="2" fill="#21262d" style="mix-blend-mode:multiply"/>
-    <rect x="150" y="226" width="49" height="14" rx="2" fill="#e34c26"/>
-    <text x="645" y="239" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">16,112</text>
-    <text x="700" y="239" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">10.4%</text>
+    <rect x="150" y="226" width="44" height="14" rx="2" fill="#e34c26"/>
+    <text x="645" y="239" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">16,135</text>
+    <text x="700" y="239" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">9.3%</text>
     
     <text x="30" y="267" font-family="'Courier New',monospace" font-size="13" fill="#c9d1d9" font-weight="600">CSS</text>
-    <rect x="150" y="254" width="14" height="14" rx="2" fill="#563d7c"/>
+    <rect x="150" y="254" width="16" height="14" rx="2" fill="#563d7c"/>
     <rect x="150" y="254" width="480" height="14" rx="2" fill="#21262d" style="mix-blend-mode:multiply"/>
-    <rect x="150" y="254" width="14" height="14" rx="2" fill="#563d7c"/>
-    <text x="645" y="267" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">4,715</text>
-    <text x="700" y="267" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">3.0%</text>
+    <rect x="150" y="254" width="16" height="14" rx="2" fill="#563d7c"/>
+    <text x="645" y="267" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">6,129</text>
+    <text x="700" y="267" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">3.5%</text>
     
     <text x="30" y="295" font-family="'Courier New',monospace" font-size="13" fill="#c9d1d9" font-weight="600">PLpgSQL</text>
-    <rect x="150" y="282" width="2" height="14" rx="2" fill="#8b949e"/>
+    <rect x="150" y="282" width="1" height="14" rx="2" fill="#8b949e"/>
     <rect x="150" y="282" width="480" height="14" rx="2" fill="#21262d" style="mix-blend-mode:multiply"/>
-    <rect x="150" y="282" width="2" height="14" rx="2" fill="#8b949e"/>
+    <rect x="150" y="282" width="1" height="14" rx="2" fill="#8b949e"/>
     <text x="645" y="295" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">656</text>
     <text x="700" y="295" font-family="'Courier New',monospace" font-size="12" fill="#8b949e" text-anchor="end">0.4%</text>
     
