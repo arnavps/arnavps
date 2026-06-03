@@ -93,12 +93,12 @@ base   : Mumbai, India
 ## 📈 Learning Path
 
 ```
-Linux              ███████░░░ 100%
-Networking         ████████░░  80%
-Web Basics         ████████░░  80%
-Web Security       ███████░░░  70%
-Bug Bounty         ███░░░░░░░  30%
-OSCP Track         █░░░░░░░░░  10%
+Linux              ███████░░░   75%
+Networking         ████████░░   80%
+Web Basics         ████████░░   85%
+Web Security       ███████░░░   70%
+Bug Bounty         ███░░░░░░░   30%
+OSCP Track         █░░░░░░░░░   10%
 ```
 
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
