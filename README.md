@@ -16,9 +16,9 @@
 
 ```yaml
 who    : Arnav Shirwadkar
-study  : CSE (IoT & Cyber Security) @ LTCE Mumbai — GPA 9.3
+study  : CSE (IoT & Cyber Security) @ LTCE Mumbai 
 doing  : CTFs · Security Labs · Offensive Tooling · Writeups
-certs  : CEH (pursuing) · CompTIA Security+ (pursuing)
+certs  : Currently preparing for CEH and CompTIA Security+ while building hands-on experience through labs and security projects.
 base   : Mumbai, India
 ```
 
