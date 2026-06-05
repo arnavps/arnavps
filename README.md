@@ -18,7 +18,7 @@
 who    : Arnav Shirwadkar
 study  : CSE (IoT & Cyber Security) @ LTCE Mumbai 
 doing  : CTFs · Security Labs · Offensive Tooling · Writeups
-certs  : Currently preparing for CEH and CompTIA Security+ while building hands-on experience through labs and security projects.
+certs  : Currently preparing for CEH and CompTIA Security+ 
 base   : Mumbai, India
 ```
 
