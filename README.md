@@ -45,6 +45,7 @@ base   : Mumbai, India
 | ⚙️ | **Security Automation Scripts** | Python tooling built while learning offensive security |
 | 🌐 | **Web Security Projects** | Deep dives into HTTP, DNS, Authentication, JWT, OAuth, and vulnerabilities |
 | 📑 | **Research Projects** | Long-form technical research and architecture analysis |
+| 📚 | **Security Notes** | Structured cybersecurity notes from beginner to advanced |
 
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
@@ -70,23 +71,19 @@ base   : Mumbai, India
 
 ## 🛡️ Security Toolkit
 
-<div align="center">
+**Recon** &nbsp; <img src="https://img.shields.io/badge/Nmap-004170?style=for-the-badge&logo=nmap&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/Amass-0052CC?style=for-the-badge&logo=linux&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/theHarvester-333333?style=for-the-badge&logo=linux&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/FFUF-black?style=for-the-badge&logo=linux&logoColor=00ff41" valign="middle"> <img src="https://img.shields.io/badge/Gobuster-222222?style=for-the-badge&logo=linux&logoColor=white" valign="middle">
 
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white)
-![Nmap](https://img.shields.io/badge/Nmap-004170?style=for-the-badge&logo=nmap&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white)
+**Web Testing** &nbsp; <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/Nuclei-9B30FF?style=for-the-badge&logo=linux&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/OWASP_ZAP-000000?style=for-the-badge&logo=owasp&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" valign="middle">
 
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
-![Gobuster](https://img.shields.io/badge/Gobuster-222222?style=for-the-badge&logo=linux&logoColor=white)
-![FFUF](https://img.shields.io/badge/FFUF-black?style=for-the-badge&logo=linux&logoColor=00ff41)
-![John The Ripper](https://img.shields.io/badge/John_The_Ripper-CC0000?style=for-the-badge&logo=linux&logoColor=white)
+**Exploitation** &nbsp; <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/SQLMap-333333?style=for-the-badge&logo=linux&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/Netcat-000000?style=for-the-badge&logo=gnu-bash&logoColor=white" valign="middle">
 
-![theHarvester](https://img.shields.io/badge/theHarvester-333333?style=for-the-badge&logo=linux&logoColor=white)
-![Amass](https://img.shields.io/badge/Amass-0052CC?style=for-the-badge&logo=linux&logoColor=white)
-![Nuclei](https://img.shields.io/badge/Nuclei-9B30FF?style=for-the-badge&logo=linux&logoColor=white)
+**Windows / AD** &nbsp; <img src="https://img.shields.io/badge/BloodHound-2E2E2E?style=for-the-badge&logo=windows&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/CrackMapExec-1B1B1B?style=for-the-badge&logo=windows&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/Certipy-4B0082?style=for-the-badge&logo=windows&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/Impacket-0D1117?style=for-the-badge&logo=python&logoColor=white" valign="middle">
 
-</div>
+**Password Attacks** &nbsp; <img src="https://img.shields.io/badge/Hashcat-000000?style=for-the-badge&logo=hashcat&logoColor=00ff41" valign="middle"> <img src="https://img.shields.io/badge/John_The_Ripper-CC0000?style=for-the-badge&logo=linux&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/Hydra-8B0000?style=for-the-badge&logo=linux&logoColor=white" valign="middle">
+
+**Network Analysis** &nbsp; <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/tcpdump-000000?style=for-the-badge&logo=linux&logoColor=white" valign="middle">
+
+**Operating Systems** &nbsp; <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" valign="middle"> <img src="https://img.shields.io/badge/Parrot_OS-3BA557?style=for-the-badge&logo=parrotsecurity&logoColor=white" valign="middle">
 
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
